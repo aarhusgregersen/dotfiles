@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 ###############################################################################
 # SSD-specific tweaks                                                         #
 ###############################################################################
@@ -10,8 +12,10 @@
 
 running "Remove the sleep image file to save disk space"
 sudo rm -rf /Private/var/vm/sleepimage;ok
+
 running "Create a zero-byte file instead"
 sudo touch /Private/var/vm/sleepimage;ok
+
 running "…and make sure it can’t be rewritten"
 sudo chflags uchg /Private/var/vm/sleepimage;ok
 

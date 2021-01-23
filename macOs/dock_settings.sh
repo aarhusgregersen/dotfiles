@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 running "Set the dock on the left side of the screen"
 defaults write com.apple.dock orientation left
 

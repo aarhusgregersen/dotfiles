@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 running "Wipe all (default) app icons from the Dock"
 dockutil --no-restart --remove all

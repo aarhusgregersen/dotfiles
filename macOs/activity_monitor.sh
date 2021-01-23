@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 running "Show the main window when launching Activity Monitor"
 defaults write com.apple.ActivityMonitor OpenMainWindow -bool true;ok
 
