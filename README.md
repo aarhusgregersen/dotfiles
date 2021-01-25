@@ -43,18 +43,46 @@ You should complete the following steps in order, to use these dotfiles:
 - run `install.sh` to start installation
 - Restart your computer to finalize the process
 
+# Installed software
+Besides the much needed utilities installed above, there are plenty of applications we might need as a day-to-day user of our machine, so here's a complete list of the software installed by these dotfiles:
+
+mas
+tmux
+dockutil
+imagemagick
+vim
+redis
+
+dropbox
+firefox
+font-fira-code
+google-chrome
+postman
+slack
+sourcetree
+spotify
+visual-studio-code
+dashlane
+flux
+zsh
+docker
+evernote
+rocket
+insomnia
+iterm2
+wondershare-filmora
+discord
+mongodb-compass
+obs
+postgres
+the-unarchiver
+
 
 ## Todo:
 
 - [x] Move MacOS defaults from install.sh to `macOs/defaults.sh`
 - [x] Compare `defaults.sh` with individual sectionalized files in /macOs folder
-- [ ] Find out how to test dotfiles (docker?)
-  - Run interactive docker container: docker run -it ubuntu
-  - Open new VM locally (virtualbox, etc)
-  - Open a new cloud VM
-  - Create a new user locally
-  - Convince someone else to use your dotfiles
-  - Buy a new computer
+- [x] Find out how to test dotfiles (~~docker?~~ Brick my new macbook [x])
 – [ ] Find a way to install the remaining applications, those that won't work with Brew/Cask
   - [ ] Todoist (mas install 585829637)
   - [ ] oh-my-zsh (sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended)
@@ -71,6 +99,9 @@ You should complete the following steps in order, to use these dotfiles:
 - [ ] Find out how to duplicate my iTerm2 configuration
 - [ ] Install my favorite fonts (Menlo, Monaco, Powerlevel9k fonts)
   - [ ] Find list of currently installed fonts on MacOS
+- [ ] Find out how to copy VSCode settings
+  - https://superuser.com/questions/1080682/how-do-i-back-up-my-vs-code-settings-and-list-of-installed-extensions
+  - Settings Sync
 - [ ] Find a way to copy the configurations from subfolders as done with the [webpro dotfiles binary](https://github.com/webpro/dotfiles/blob/master/bin/dotfiles)
   ```
   sub_macos () {
@@ -85,6 +116,5 @@ You should complete the following steps in order, to use these dotfiles:
   }
 
 - [ ] Write about this on my Blog
+- [ ] Trial and error...
 - [ ] Perhaps some day in the future, expand this to include Linux
-
-### Questions
