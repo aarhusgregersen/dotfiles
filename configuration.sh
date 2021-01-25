@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+# include my library helpers for colorized echo and require_brew, etc
+source ./lib_sh/echoes.sh
+source ./lib_sh/requires.sh
+
 ###############################################################################
 bot "Configuring General System UI/UX..."
 ###############################################################################
