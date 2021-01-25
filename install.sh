@@ -292,6 +292,7 @@ if [[ $response =~ (y|yes|Y) ]];then
   require_cask font-inconsolata-for-powerline
   require_cask font-roboto-mono
   require_cask font-roboto-mono-for-powerline
+  require_cask font-menlo-for-powerline
   require_cask font-source-code-pro
   ok
 fi
