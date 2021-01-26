@@ -900,12 +900,20 @@ running "Wipe all (default) app icons from the Dock"
 dockutil --no-restart --remove all
 # defaults write com.apple.dock persistent-apps -array "";ok
 
-dockutil --no-restart --add "/Applications/Google Chrome.app"
-dockutil --no-restart --add "/System/Applications/Mail.app"
-dockutil --no-restart --add "/System/Applications/Calendar.app"
-dockutil --no-restart --add "/System/Applications/Utilities/Terminal.app"
-dockutil --no-restart --add "/System/Applications/System Preferences.app"
 dockutil --no-restart --add "/Applications/Spotify.app"
+dockutil --no-restart --add "/Applications/Google Chrome.app"
+dockutil --no-restart --add "/Applications/Firefox.app"
+dockutil --no-restart --add "/Applications/Evernote.app/"
+dockutil --no-restart --add "/System/Applications/Notes.app"
+dockutil --no-restart --add "/Applications/Todoist.app/"
+defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'
+dockutil --no-restart --add "/Applications/Slack.app/"
+dockutil --no-restart --add "/Applications/Postman.app/"
+dockutil --no-restart --add "/Applications/Insomnia.app/"
+dockutil --no-restart --add "/Applications/Visual Studio Code.app/"
+dockutil --no-restart --add "/System/Applications/Utilities/Terminal.app"
+dockutil --no-restart --add "/Applications/iTerm.app/"
+defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'
 
 killall Dock
 
