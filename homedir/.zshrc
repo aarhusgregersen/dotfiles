@@ -113,6 +113,10 @@ alias run-introdus="tmux new-session \; \
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
+# Set packageconfig for 'libffi' ruby library
+export PKG_CONFIG_PATH="/opt/homebrew/opt/libffi/lib/pkgconfig"
+
+# Set postgres hostserver to localhost
 export PGHOST=localhost
 
 # Initialize NVM
@@ -144,3 +148,4 @@ load-nvmrc
 autoload -U +X bashcompinit && bashcompinit
 
 complete -o nospace -C /usr/local/bin/terraform terraform
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
