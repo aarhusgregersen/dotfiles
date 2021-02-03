@@ -1,18 +1,95 @@
 tap "goles/battery"
 tap "homebrew/bundle"
 tap "homebrew/core"
+tap "hashicorp/tap"
+tap "heroku/brew"
+tap "homebrew/cask"
+tap "homebrew/cask-drivers"
+tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
+tap "homebrew/services"
 
 # Install GNU core utilities (those that come with macOS are outdated)
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew "coreutils"
-# Mac App Store CLI: https://github.com/mas-cli/mas
-brew "mas"
+# Mac App Store command-line interface https://github.com/mas-cli/mas
+brew "mas", link: false
 brew "tmux"
 brew "dockutil"
-brew "imagemagick"
+# Tools and libraries to manipulate images in many formats
+brew "imagemagick", link: false
+# Tools and libraries to manipulate images in many formats
+brew "imagemagick@6", link: true
 brew "vim"
+# Persistent key-value database, with built-in net interface
 brew "redis"
+# Object-relational database system
 brew "postgresql"
 brew "gnupg"
 brew "gnupg2"
 brew "libffi"
+# JavaScript package manager
+brew "yarn"
+# Automatic configure script builder
+brew "autoconf"
+# Tool for generating GNU Standards-compliant Makefiles
+brew "automake"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@1.1"
+# Library for command-line editing
+brew "readline"
+# Official Amazon AWS command-line interface
+brew "awscli"
+# Core application library for C
+brew "glib"
+# Generic library support script
+brew "libtool"
+# YAML Parser
+brew "libyaml"
+# Manage compile and link flags for libraries
+brew "pkg-config"
+# Python version management
+brew "pyenv"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9", link: false
+# Tool to build, change, and version infrastructure
+brew "terraform"
+# Terminal multiplexer
+brew "tmux"
+# Image processing library
+brew "vips"
+# General-purpose lossless data-compression library
+brew "zlib"
+# Everything you need to get started with Heroku
+brew "heroku/brew/heroku"
+
+# CASKS
+cask "dropbox"
+cask "firefox"
+cask "font-fira-code"
+cask "google-chrome"
+cask "postman"
+cask "slack"
+cask "spotify"
+cask "visual-studio-code"
+cask "dashlane"
+cask "flux"
+cask "docker"
+cask "evernote"
+cask "rocket"
+cask "insomnia"
+cask "iterm2"
+cask "wondershare-filmora"
+cask "discord"
+cask "mongodb-compass"
+cask "obs"
+cask "postgres"
+cask "the-unarchiver"
+# Automated testing of webapps for Google Chrome
+cask "chromedriver"
+cask "phantomjs"
+
+# APP STORE APPLICATIONS
+mas "ColorSlurp", id: 1287239339
+mas "Evernote", id: 406056744
+mas "Todoist", id: 585829637
