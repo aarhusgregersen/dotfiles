@@ -164,9 +164,6 @@
 [diff]
   tool = vimdiff
 
-[init]
-  templatedir = ~/.dotfiles/.git_template
-
 [mergetool]
   prompt = false
   keepBackup = false
@@ -189,8 +186,7 @@
   clean = expand -t 4
 
 [push]
-  default = matching
-  # default = simple
+  default = simple
 	followTags = true
 
 [filter "media"]
