@@ -97,6 +97,8 @@ source $ZSH/oh-my-zsh.sh
 alias gs="git status"
 alias ls="ls -lG"
 alias ns="npm start"
+alias tsc="npm run tsc"
+alias tss="npm run tsc && ns"
 alias run-introdus="tmux new-session \; \
   send-keys 'redis-server' C-m \; \
   split-window -h \; \
