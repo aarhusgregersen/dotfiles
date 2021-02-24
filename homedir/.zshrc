@@ -97,6 +97,7 @@ source $ZSH/oh-my-zsh.sh
 alias gs="git status"
 alias ls="ls -lG"
 alias ns="npm start"
+alias npml="npm list -g --depth 0"
 alias tsc="npm run tsc"
 alias tss="npm run tsc && ns"
 alias run-introdus="tmux new-session \; \
