@@ -219,6 +219,7 @@ require_brew zsh
 # use versions of packages installed with homebrew
 RUBY_CONFIGURE_OPTS="--with-openssl-dir=`brew --prefix openssl` --with-readline-dir=`brew --prefix readline` --with-libyaml-dir=`brew --prefix libyaml`"
 require_brew ruby
+
 # set zsh as the user login shell
 CURRENTSHELL=$(dscl . -read /Users/$USER UserShell | awk '{print $2}')
 if [[ "$CURRENTSHELL" != "/usr/local/bin/zsh" ]]; then
@@ -310,10 +311,6 @@ npm config set save-exact true
 # Install Brewfile
 running "Installing all softwares in your Brewfile"
 brew bundle --file ./install/Brewfile
-
-# Install Caskfile
-running "Now installing all softwares in your Caskfile"
-brew bundle --file ./install/Caskfile
 
 # Install Visual Studio Code plugins
 # TODO: Fix this
@@ -837,8 +834,9 @@ defaults write com.apple.dock mru-spaces -bool false;ok
 
 running "Remove the auto-hiding Dock delay"
 defaults write com.apple.dock autohide-delay -float 0;ok
-running "Remove the animation when hiding/showing the Dock"
-defaults write com.apple.dock autohide-time-modifier -float 0;ok
+
+# running "Remove the animation when hiding/showing the Dock"
+# defaults write com.apple.dock autohide-time-modifier -float 0;ok
 
 running "Automatically hide and show the Dock"
 defaults write com.apple.dock autohide -bool true;ok
