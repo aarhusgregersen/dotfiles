@@ -190,6 +190,10 @@
   default = simple
 	followTags = true
 
+[pull]
+  # ff = only
+  rebase = false
+
 [filter "media"]
   required = true
   clean = git media clean %f
